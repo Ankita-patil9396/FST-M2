@@ -1,18 +1,18 @@
 # Open up vim, paste the text from slide 20.1 and save and exit.
-$ vim txtFile.txt
+$ Ank txtFile.txt
 
 # Open up vim, paste the text from slide 20.2 and save and exit.
-$ vim csvFile.csv
+$ Ank csvFile.csv
 
 # Make a textData folder on the HDFS
-$ hdfs dfs -mkdir /user/vinmay/
+$ hdfs dfs -mkdir /user/Ankita/
 
 # Copy the TXT file, txtFile.txt, into the textData folder in the HDFS
-$ hdfs dfs -put ./txtFile.txt /user/vinmay/
+$ hdfs dfs -put ./txtFile.txt /user/Ankita/
 
 # Copy the CSV file, csvFile.csv, into the textData folder in the HDFS
-$ hdfs dfs -put ./csvFile.csv /user/vinmay/
+$ hdfs dfs -put ./csvFile.csv /user/Ankita/
 
 # Use the stat command to get the file statistics
-$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/vinmay/txtFile.txt
-$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/vinmay/csvFile.csv
+$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/Ankita/txtFile.txt
+$ hdfs dfs -stat "type:%F permissions:%a %u:%g size:%b name:%n" /user/Ankita/csvFile.csv
