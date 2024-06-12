@@ -15,7 +15,7 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' TBLPROPERTIES ("skip.header.line.c
  SELECT * FROM employee WHERE salary > 30000;
 
  -- Exports to HDFS directory
- INSERT OVERWRITE DIRECTORY '/user/vinmay/HiveOutput' ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+ INSERT OVERWRITE DIRECTORY '/user/Ankita/HiveOutput' ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
  SELECT * FROM employee;
 
  -- Exports to local directory
