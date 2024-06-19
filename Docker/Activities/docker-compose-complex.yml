@@ -20,7 +20,7 @@ services:
   #API service
   api:
     build: ./server
-    image: "nisht/complex_api"
+    image: "Ankitap/complex_api"
     environment:
           - REDIS_HOST=redis_db
           - REDIS_PORT=6379
@@ -31,10 +31,10 @@ services:
           - PGDATABASE=postgres
   worker:
     build: ./worker
-    image: "nisht/complex_worker"
+    image: "Ankitap/complex_worker"
     environment:
           - REDIS_HOST=redis_db
           - REDIS_PORT=6379
   client:
     build: ./client
-    image: "nisht/complex_client"
+    image: "Ankitap/complex_client"
