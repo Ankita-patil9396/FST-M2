@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: vinmayjagtap/complex_api
+          image: Ankitapatil/complex_api
           ports:
             - containerPort: 5000
 
